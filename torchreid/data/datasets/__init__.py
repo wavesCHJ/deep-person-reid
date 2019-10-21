@@ -39,7 +39,7 @@ def init_image_dataset(name, **kwargs):
                          'but expected to be one of {}'.format(name, avai_datasets))
     res = __image_datasets[name](**kwargs)
     print("### __image_datasets:", res)
-    return res 
+    return res
     # return __image_datasets[name](**kwargs)
 
 
@@ -75,6 +75,7 @@ def register_image_dataset(name, dataset):
             sources=['new_dataset', 'dukemtmcreid']
         )
     """
+    print("### register_image_dataset(name, dataset), ", name, dataset)
     global __image_datasets
     curr_datasets = list(__image_datasets.keys())
     if name in curr_datasets:
