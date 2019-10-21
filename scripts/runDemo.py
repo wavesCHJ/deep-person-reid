@@ -25,7 +25,7 @@ for batch_idx, data in enumerate(datamanager.trainloader):
     imgs, pids = _parse_data_for_train(data)
     print("imgs:", imgs, "---pids:", pids)
     cnt = cnt + 1
-    if cnt == 10:
+    if cnt == 2:
         break
 
 '''
