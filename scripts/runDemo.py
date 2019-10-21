@@ -11,7 +11,7 @@ datamanager = torchreid.data.ImageDataManager(
     batch_size_test=100,
     transforms=['random_flip', 'random_crop']
 )
-
+'''
 # Build model, optimizer and lr_scheduler
 model = torchreid.models.build_model(
     name='resnet50',
@@ -51,3 +51,4 @@ engine.run(
     print_freq=10,
     test_only=False
 )
+'''

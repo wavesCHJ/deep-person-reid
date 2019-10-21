@@ -89,5 +89,5 @@ def build_train_sampler(data_source, train_sampler, batch_size=32, num_instances
     
     else:
         sampler = RandomSampler(data_source)
-
+    print("### train_sampler:", sampler)
     return sampler

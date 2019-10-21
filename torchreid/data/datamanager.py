@@ -143,7 +143,9 @@ class ImageDataManager(DataManager):
                 market1501_500k=market1501_500k
             )
             trainset.append(trainset_)
+        print("### trainset_before:", trainset)
         trainset = sum(trainset)
+        print("### trainset_sum:", trainset)
 
         self._num_train_pids = trainset.num_train_pids
         self._num_train_cams = trainset.num_train_cams
@@ -167,6 +169,8 @@ class ImageDataManager(DataManager):
         print('=> Loading test (target) dataset')
         self.testloader = {name: {'query': None, 'gallery': None} for name in self.targets}
         self.testdataset = {name: {'query': None, 'gallery': None} for name in self.targets}
+        print("### self.target:", self.targets)
+        print("### self.testloader", self.testloader)
 
         for name in self.targets:
             # build query loader
