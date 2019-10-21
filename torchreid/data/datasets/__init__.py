@@ -32,14 +32,12 @@ __video_datasets = {
 def init_image_dataset(name, **kwargs):
     """Initializes an image dataset."""
     avai_datasets = list(__image_datasets.keys())
-    print("### avai_datasets:", avai_datasets)
-    print("### name:", name)
+    print("### name:", name, " avai_datasets:", avai_datasets)
     if name not in avai_datasets:
         raise ValueError('Invalid dataset name. Received "{}", '
                          'but expected to be one of {}'.format(name, avai_datasets))
-    print("############## ")
     res = __image_datasets[name](**kwargs)
-    print("### __image_datasets:", res)
+    # print("### __image_datasets:", res)
     return res
     # return __image_datasets[name](**kwargs)
 

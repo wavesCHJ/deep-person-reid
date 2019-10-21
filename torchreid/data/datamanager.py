@@ -142,11 +142,11 @@ class ImageDataManager(DataManager):
                 cuhk03_classic_split=cuhk03_classic_split,
                 market1501_500k=market1501_500k
             )
-            print("### trainset_:", trainset_)
+            # print("### trainset_:", trainset_)
             trainset.append(trainset_)
-        print("### trainset_before:", trainset)
+        # print("### trainset_before:", trainset)
         trainset = sum(trainset)
-        print("### trainset_sum:", trainset)
+        # print("### trainset_sum:", trainset)
 
         self._num_train_pids = trainset.num_train_pids
         self._num_train_cams = trainset.num_train_cams
