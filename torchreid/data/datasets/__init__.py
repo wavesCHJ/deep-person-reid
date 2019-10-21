@@ -37,6 +37,7 @@ def init_image_dataset(name, **kwargs):
     if name not in avai_datasets:
         raise ValueError('Invalid dataset name. Received "{}", '
                          'but expected to be one of {}'.format(name, avai_datasets))
+    print("############## ")
     res = __image_datasets[name](**kwargs)
     print("### __image_datasets:", res)
     return res

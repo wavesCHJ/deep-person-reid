@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb5f2022-d4d3-4f79-8d16-959e0dfff3df" name="Default Changelist" comment="">
+    <list default="true" id="eb5f2022-d4d3-4f79-8d16-959e0dfff3df" name="Default Changelist" comment="edit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/torchreid/data/datasets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/torchreid/data/datasets/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/torchreid/data/datasets/image/market1501.py" beforeDir="false" afterPath="$PROJECT_DIR$/torchreid/data/datasets/image/market1501.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571649307444</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="edit">
+      <created>1571650504142</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571650504142</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

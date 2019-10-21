@@ -32,10 +32,10 @@ class Market1501(ImageDataset):
         print("### Market1501.__init__")
         self.root = osp.abspath(osp.expanduser(root))
         self.dataset_dir = osp.join(self.root, self.dataset_dir)
-        if not os.path.exists(self.dataset_dir + '/Market-1501-v15.09.15.zip'):
-            self.download_dataset(self.dataset_dir, self.dataset_url)
-        else:
-            print("### Market-1501-v15.09.15.zip dataset exists")
+        # if not os.path.exists(self.dataset_dir + '/Market-1501-v15.09.15.zip'):
+        self.download_dataset(self.dataset_dir, self.dataset_url)
+        # else:
+        #     print("### Market-1501-v15.09.15.zip dataset exists")
         
         # allow alternative directory structure
         self.data_dir = self.dataset_dir
