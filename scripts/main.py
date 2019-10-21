@@ -8,7 +8,7 @@ import argparse
 import torch
 import torch.nn as nn
 
-from .default_config import (
+from default_config import (
     get_default_config, imagedata_kwargs, videodata_kwargs,
     optimizer_kwargs, lr_scheduler_kwargs, engine_run_kwargs
 )
