@@ -117,7 +117,8 @@ class Engine(object):
 
         for epoch in range(start_epoch, max_epoch):
             self.train(epoch, max_epoch, trainloader, fixbase_epoch, open_layers, print_freq)
-            
+            print("### test train ,end")
+            return
             if (epoch+1)>=start_eval and eval_freq>0 and (epoch+1)%eval_freq==0 and (epoch+1)!=max_epoch:
                 rank1 = self.test(
                     epoch,
@@ -131,7 +132,8 @@ class Engine(object):
                     ranks=ranks
                 )
                 self._save_checkpoint(epoch, rank1, save_dir)
-
+        print("### no")
+        return
         if max_epoch > 0:
             print('=> Final test')
             rank1 = self.test(

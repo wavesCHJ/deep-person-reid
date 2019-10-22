@@ -96,7 +96,9 @@ class ImageSoftmaxEngine(engine.Engine):
                 pids = pids.cuda()
             
             self.optimizer.zero_grad()
+            print("### self.model:", self.model)
             outputs = self.model(imgs)
+            print("### outputs:", outputs)
             loss = self._compute_loss(self.criterion, outputs, pids)
             loss.backward()
             self.optimizer.step()
