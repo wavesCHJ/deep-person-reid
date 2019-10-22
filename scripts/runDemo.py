@@ -25,6 +25,7 @@ for batch_idx, data in enumerate(datamanager.trainloader):
 
     imgs, pids = _parse_data_for_train(data)
     print("imgs:", imgs, "\npids:", pids)
+    break
 
 '''
 # Build model, optimizer and lr_scheduler
