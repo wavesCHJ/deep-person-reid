@@ -140,6 +140,8 @@ class ResNet(nn.Module):
     def __init__(self, num_classes, loss, block, layers, zero_init_residual=False,
                  groups=1, width_per_group=64, replace_stride_with_dilation=None,
                  norm_layer=None, last_stride=2, fc_dims=None, dropout_p=None, **kwargs):
+
+        print("### ResNet------------------")
         super(ResNet, self).__init__()
         if norm_layer is None:
             norm_layer = nn.BatchNorm2d

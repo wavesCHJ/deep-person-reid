@@ -19,13 +19,13 @@ datamanager = torchreid.data.ImageDataManager(
     transforms=['random_flip', 'random_crop']
 )
 
-# num_batches = len(datamanager.trainloader)
-# print("num_batches:", num_batches)
-# for batch_idx, data in enumerate(datamanager.trainloader):
-#
-#     imgs, pids = _parse_data_for_train(data)
-#     print("imgs:", imgs, "\npids:", pids)
-#     break
+num_batches = len(datamanager.trainloader)
+print("num_batches:", num_batches)
+for batch_idx, data in enumerate(datamanager.trainloader):
+
+    imgs, pids = _parse_data_for_train(data)
+    print("imgs:", imgs, "\npids:", pids)
+    break
 
 
 # Build model, optimizer and lr_scheduler
