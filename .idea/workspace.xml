@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb5f2022-d4d3-4f79-8d16-959e0dfff3df" name="Default Changelist" comment="edit">
+      <change beforePath="$PROJECT_DIR$/.idea/deep-person-reid.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deep-person-reid.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/torchreid/data/datasets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/torchreid/data/datasets/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/torchreid/data/datasets/image/market1501.py" beforeDir="false" afterPath="$PROJECT_DIR$/torchreid/data/datasets/image/market1501.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +29,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../lanmengexcel38" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -77,7 +77,35 @@
       <option name="project" value="LOCAL" />
       <updated>1571650504142</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="edit">
+      <created>1571710412706</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571710412706</updated>
+    </task>
+    <task id="LOCAL-00005" summary="edit">
+      <created>1571711026438</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571711026438</updated>
+    </task>
+    <task id="LOCAL-00006" summary="edit">
+      <created>1571711162526</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571711162526</updated>
+    </task>
+    <task id="LOCAL-00007" summary="edit">
+      <created>1571717965985</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571717965985</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

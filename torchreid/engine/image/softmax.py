@@ -99,6 +99,8 @@ class ImageSoftmaxEngine(engine.Engine):
             print("### self.model:", self.model)
             outputs = self.model(imgs)
             print("### outputs:", outputs)
+            print("### test end----")
+            return
             loss = self._compute_loss(self.criterion, outputs, pids)
             loss.backward()
             self.optimizer.step()
