@@ -1,5 +1,11 @@
 import torchreid
 
+
+def _parse_data_for_train(data):
+    imgs = data[0]
+    pids = data[1]
+    return imgs, pids
+
 # Load data manager
 datamanager = torchreid.data.ImageDataManager(
     root='reid-data',
@@ -11,6 +17,17 @@ datamanager = torchreid.data.ImageDataManager(
     batch_size_test=100,
     transforms=['random_flip', 'random_crop']
 )
+
+cnt = 0
+num_batches = len(datamanager.trainloader)
+for batch_idx, data in enumerate(datamanager.trainloader):
+
+    imgs, pids = _parse_data_for_train(data)
+    print("imgs:", imgs, "---pids:", pids)
+    cnt = cnt + 1
+    if cnt == 2:
+        break
+
 '''
 # Build model, optimizer and lr_scheduler
 model = torchreid.models.build_model(
