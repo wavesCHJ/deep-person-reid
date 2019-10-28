@@ -21,11 +21,14 @@ datamanager = torchreid.data.ImageDataManager(
 
 num_batches = len(datamanager.trainloader)
 print("num_batches:", num_batches)
+i = 1
 for batch_idx, data in enumerate(datamanager.trainloader):
 
     imgs, pids = _parse_data_for_train(data)
-    print("imgs:", imgs, "\npids:", pids)
-    break
+    print("batch_idx:", batch_idx, "\nimgs:", imgs, "\npids:", pids)
+    if i == 2:
+        break
+    i = i + 1
 
 
 '''
