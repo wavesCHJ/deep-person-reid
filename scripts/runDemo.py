@@ -1,10 +1,10 @@
 import torchreid
 
 
-# def _parse_data_for_train(data):
-#     imgs = data[0]
-#     pids = data[1]
-#     return imgs, pids
+def _parse_data_for_train(data):
+    imgs = data[0]
+    pids = data[1]
+    return imgs, pids
 
 
 # Load data manager
@@ -19,15 +19,16 @@ datamanager = torchreid.data.ImageDataManager(
     transforms=['random_flip', 'random_crop']
 )
 
-# num_batches = len(datamanager.trainloader)
-# print("num_batches:", num_batches)
-# for batch_idx, data in enumerate(datamanager.trainloader):
-#
-#     imgs, pids = _parse_data_for_train(data)
-#     print("imgs:", imgs, "\npids:", pids)
-#     break
+num_batches = len(datamanager.trainloader)
+print("num_batches:", num_batches)
+for batch_idx, data in enumerate(datamanager.trainloader):
+
+    imgs, pids = _parse_data_for_train(data)
+    print("imgs:", imgs, "\npids:", pids)
+    break
 
 
+'''
 # Build model, optimizer and lr_scheduler
 model = torchreid.models.build_model(
     name='resnet50',
@@ -67,3 +68,4 @@ engine.run(
     print_freq=10,
     test_only=False
 )
+'''
